@@ -1,6 +1,6 @@
 # About
 
-Arch package for Kaspersky Endpoint Security for Linux (KESL)
+Arch package for Kaspersky Endpoint Security for Linux GUI (KESL-GUI)
 
 ## Features
 
