@@ -1,24 +1,23 @@
 # Maintainer: copycat <simakr2512 | at | yandex [DOT] ru>
 pkgname=('kesl-gui')
-pkgver=12.0.0.6672
-_pkgver_gui=12.0.0.6672
+pkgver=12.1.0.1274
 _pkgverbuild=$(echo ${pkgver} | cut -d "." -f 4)
 _pkgver=$(echo ${pkgver} | cut -d "." -f 1-3)
-pkgrel=2
+pkgrel=1
 arch=('x86_64')
-pkgdesc='Kaspersky Endpoint Security 12.0.0 for Linux (GUI)'
-url='https://support.kaspersky.com/KES4Linux/12.0.0/en-US/245017.htm'
+pkgdesc='Kaspersky Endpoint Security 12.1.0 for Linux (GUI)'
+url='https://support.kaspersky.com/help/KES4Linux/12.1.0/en-US/264264.htm'
 license=('custom')
 noextract=("kesl-gui_${_pkgver}-${_pkgverbuild}_amd64.deb")
 depends=('perl' 'kesl' 'freetype2')
 options=("!strip")
 install=${pkgname}.install
 changelog=${pkgname}.changelog
-
-source=( "https://products.s.kaspersky-labs.com/endpoints/keslinux10/${pkgver}/multilanguage-${_pkgver_gui}/3739343633387c44454c7c31/kesl-gui_${_pkgver}-${_pkgverbuild}_amd64.deb"
+#https://products.s.kaspersky-labs.com/endpoints/keslinux10/12.1.0.1274/multilanguage-12.1.0.1274/3834323835337c44454c7c31/kesl-gui_12.1.0-1274_amd64.deb
+source=( "https://products.s.kaspersky-labs.com/endpoints/keslinux10/${pkgver}/multilanguage-${pkgver}/3834323835337c44454c7c31/kesl-gui_${_pkgver}-${_pkgverbuild}_amd64.deb"
          "${pkgname}.install")
 
-sha256sums=('9b066af7d150c599c952e4002ed7b04905be0aba15992a3e2190e5b045332552'
+sha256sums=('39fddc01e6afbde5279d9662be2c290eb9ea6642c8e3fcd4e5a740351673e3df'
             '6eb8fdafdd0811ed25d7b36541f8214e1c3b4f9989d8e1df448311535827121a')
 
 validpgpkeys=('6AFE173577C4CBD621DF217FD093435AA3ED2C4A')
