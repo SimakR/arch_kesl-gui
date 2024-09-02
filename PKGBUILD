@@ -1,6 +1,6 @@
 # Maintainer: copycat <simakr2512 | at | yandex [DOT] ru>
 pkgname=('kesl-gui')
-pkgver=12.1.0.1274
+pkgver=12.1.0.1297
 _pkgverbuild=$(echo ${pkgver} | cut -d "." -f 4)
 _pkgver=$(echo ${pkgver} | cut -d "." -f 1-3)
 pkgrel=1
