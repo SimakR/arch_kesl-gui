@@ -13,11 +13,13 @@ depends=('perl' 'kesl' 'freetype2')
 options=("!strip")
 install=${pkgname}.install
 changelog=${pkgname}.changelog
-#https://products.s.kaspersky-labs.com/endpoints/keslinux10/12.1.0.1274/multilanguage-12.1.0.1274/3834323835337c44454c7c31/kesl-gui_12.1.0-1274_amd64.deb
-source=( "https://products.s.kaspersky-labs.com/endpoints/keslinux10/${pkgver}/multilanguage-${pkgver}/3834323835337c44454c7c31/kesl-gui_${_pkgver}-${_pkgverbuild}_amd64.deb"
+
+#https://www.kaspersky.com/small-to-medium-business-security/downloads/endpoint?utm_content=downloads
+#They always change that "3837323739337c44454c7c31" thing so there is no point of generating download link based on pkg version
+source=( "https://products.s.kaspersky-labs.com/endpoints/keslinux10/12.1.0.1297/multilanguage-12.1.0.1297/3837323739397c44454c7c31/kesl-gui_12.1.0-1297_amd64.deb"
          "${pkgname}.install")
 
-sha256sums=('39fddc01e6afbde5279d9662be2c290eb9ea6642c8e3fcd4e5a740351673e3df'
+sha256sums=('e37e3a352be83514d17706f4af1b289bb4ceb95f731d520a96e52699e609df4e'
             '6eb8fdafdd0811ed25d7b36541f8214e1c3b4f9989d8e1df448311535827121a')
 
 validpgpkeys=('6AFE173577C4CBD621DF217FD093435AA3ED2C4A')
