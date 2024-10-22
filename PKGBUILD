@@ -1,6 +1,6 @@
 # Maintainer: copycat <simakr2512 | at | yandex [DOT] ru>
 pkgname=('kesl-gui')
-pkgver=12.1.0.1297
+pkgver=12.1.0.1508
 _pkgverbuild=$(echo ${pkgver} | cut -d "." -f 4)
 _pkgver=$(echo ${pkgver} | cut -d "." -f 1-3)
 pkgrel=1
@@ -16,10 +16,10 @@ changelog=${pkgname}.changelog
 
 #https://www.kaspersky.com/small-to-medium-business-security/downloads/endpoint?utm_content=downloads
 #They always change that "3837323739337c44454c7c31" thing so there is no point of generating download link based on pkg version
-source=( "https://products.s.kaspersky-labs.com/endpoints/keslinux10/12.1.0.1297/multilanguage-12.1.0.1297/3837323739397c44454c7c31/kesl-gui_12.1.0-1297_amd64.deb"
+source=( "https://products.s.kaspersky-labs.com/endpoints/keslinux10/12.1.0.1508/multilanguage-12.1.0.1508/3931313439377c44454c7c31/kesl-gui_12.1.0-1508_amd64.deb"
          "${pkgname}.install")
 
-sha256sums=('e37e3a352be83514d17706f4af1b289bb4ceb95f731d520a96e52699e609df4e'
+sha256sums=('51e0cd6dee3f9f7371811b38b1d3b054ebd1908fda2f5c0bb75f51c8a9f98777'
             '6eb8fdafdd0811ed25d7b36541f8214e1c3b4f9989d8e1df448311535827121a')
 
 validpgpkeys=('6AFE173577C4CBD621DF217FD093435AA3ED2C4A')
